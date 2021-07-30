@@ -42,7 +42,7 @@
    ``` - I1_unittest.fastq ```  
    ``` - I2_unittest.fastq ```  
    
-   Output Files:
+   Output Files:  
    ``` - matched_R1.fastq ```     
    ``` - matched_R2.fastq ```   
    ``` - swapped_R1.fastq ```   
