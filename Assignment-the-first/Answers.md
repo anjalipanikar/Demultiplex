@@ -11,11 +11,17 @@
 | 1294_S1_L008_R4_001.fastq.gz | Read 2 |
 
 2. Per-base NT distribution
+    ``` Read 1 Nucleotide Quality Score Distribution```
+    ![read1](https://user-images.githubusercontent.com/52551690/127605116-afde4c14-cac9-479e-b74d-901c19138101.jpeg)
     
-    ![read1](https://user-images.githubusercontent.com/52551690/127602541-f1ae0061-39f1-4ad8-9ef3-7f9d2f4fcb66.png)
-    ![index1](https://user-images.githubusercontent.com/52551690/127602552-1e4cb6e0-7e80-4050-a907-8fa24c6faec9.png)
-    ![index2](https://user-images.githubusercontent.com/52551690/127602568-962c3b19-a477-4283-b72c-3cc57b440680.png)
-    ![read2](https://user-images.githubusercontent.com/52551690/127602574-21bffbbc-f502-4083-9819-71a435127d8c.png)
+    ``` Read 2 Nucleotide Quality Score Distribution```
+    ![read2](https://user-images.githubusercontent.com/52551690/127605235-fcde86c2-de8c-4b86-9a78-c76bd29630c1.jpeg)
+    
+    ``` Index 1 Nucleotide Quality Score Distribution```
+    ![index1](https://user-images.githubusercontent.com/52551690/127605279-8872b689-1860-4bd3-8e8a-621b363476e5.jpeg)
+    
+    ``` Index 2 Nucleotide Quality Score Distribution```
+    ![index2](https://user-images.githubusercontent.com/52551690/127605356-ea9afaf6-6203-460b-a4c9-fb71a2cc40b3.jpeg)    
     
 ## Part 2
 1. Define the problem
