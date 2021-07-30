@@ -11,9 +11,11 @@
 | 1294_S1_L008_R4_001.fastq.gz | Read 2 |
 
 2. Per-base NT distribution
-    1. Use markdown to insert your 4 histograms here.
-    2. /home/anjalip/bgmp/bioinformatics/Bi622/Demultiplex/Assignment-the-first/index1.png
-    3. ```Your answer here```
+    
+    1.![read1](https://user-images.githubusercontent.com/52551690/127602541-f1ae0061-39f1-4ad8-9ef3-7f9d2f4fcb66.png)
+    2.![index1](https://user-images.githubusercontent.com/52551690/127602552-1e4cb6e0-7e80-4050-a907-8fa24c6faec9.png)
+    3.![index2](https://user-images.githubusercontent.com/52551690/127602568-962c3b19-a477-4283-b72c-3cc57b440680.png)
+    4.![read2](https://user-images.githubusercontent.com/52551690/127602574-21bffbbc-f502-4083-9819-71a435127d8c.png)
     
 ## Part 2
 1. Define the problem
