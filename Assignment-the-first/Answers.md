@@ -12,6 +12,7 @@
 
 2. Per-base NT distribution    
    i.  
+   
        ``` Read 1 Nucleotide Quality Score Distribution```  
       ![read1](https://user-images.githubusercontent.com/52551690/127605116-afde4c14-cac9-479e-b74d-901c19138101.jpeg)  
         
