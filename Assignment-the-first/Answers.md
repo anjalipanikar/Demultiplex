@@ -73,8 +73,46 @@
          else:    
            wite to bad R1 and R2  
 
-8. High level functions. For each function, be sure to include:
-    1. Description/doc string
-    2. Function headers (name and parameters)
-    3. Test examples for individual functions
-    4. Return statement
+8. High level functions. For each function, be sure to include:  
+    1. Description/doc string      
+
+      convert_phred(): takes a letter quality score and converts it to the number phred score   
+      reverse_compliment(): takes a string sequence and returns it's reverse compliment    
+      average_quality(): takes a sequence of quality scores and returns the average quality score of the sequence     
+
+    3. Function headers (name and parameters)    
+
+      convert_phred(letter_score)  
+      reverse_compliment(sequence)  
+      average_quality(qscore_line)      
+
+    5. Test examples for individual functions        
+
+      convert_phred():  
+         Input: E  
+         Output: 36    
+         
+      reverse_compliment():    
+         Input: TGTTCCGT  
+         Output: ACGGAACA               
+      
+      average_quality():     
+         Input: #AAAFJJ<    
+         Output: 30.5  
+         
+    7. Return statement        
+
+         convert_phred(letter_score):    
+            return Qscore
+            
+         reverse_compliment(sequence):    
+            return rev_comp  
+            
+         average_quality(qscore_line):      
+            return average_qual     
+            
+            
+         
+         
+         
+         
