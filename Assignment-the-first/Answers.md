@@ -41,6 +41,14 @@
    ``` - R2_unittest.fastq ```  
    ``` - I1_unittest.fastq ```  
    ``` - I2_unittest.fastq ```  
+   
+   Output Files:
+   ``` - matched_R1.fastq ```   
+   ``` - matched_R2.fastq ``` 
+   ``` - swapped_R1.fastq ``` 
+   ``` - swapped_R2.fastq ```
+   ``` - bad_R1.fastq ``` 
+   ``` - bad_R2.fastq ``` 
 
 
 7. Pseudocode
