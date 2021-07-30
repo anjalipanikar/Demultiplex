@@ -10,7 +10,7 @@
 | 1294_S1_L008_R3_001.fastq.gz | Index 2 |
 | 1294_S1_L008_R4_001.fastq.gz | Read 2 |
 
-2. Per-base NT distribution
+2. Per-base NT distribution  
     ``` Read 1 Nucleotide Quality Score Distribution```
     ![read1](https://user-images.githubusercontent.com/52551690/127605116-afde4c14-cac9-479e-b74d-901c19138101.jpeg)
     
