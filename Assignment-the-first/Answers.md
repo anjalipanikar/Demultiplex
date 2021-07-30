@@ -53,25 +53,25 @@
 
 7. Pseudocode
    
-   ``` Make a set() of known indexes ```  
-   ``` Open I1, I2, R1, R2 ```  
-   ``` While files open```     
-   ```   read record from I1 ```     
-   ```   read record from I2 ```  
-   ```   read header from R1 ```  
-   ```   read header from R2 ```  
-   ```   index_header = I1 + rev comp(I2) ```    
-   ```   new header_R1 = header_R1 + index_header ```  
-   ```   new_header_R2 = header_R2 + index_header ```      
-   ```   if ("N" is in I1 or I2) or (Qscore < Cutoff): ```          
-   ```      write to bad R1 and bad R2 with new headers ```    
-   ```   else if I1 and I2 in Known Indexes ```     
-   ```      if R1 == revs_comp(R2)```    
-   ```         write to matched R1 and R2```    
-   ```      else: ```    
-   ```         write to swapped R1 and R2```  
-   ```   else: ```    
-   ```      bad ```  
+   Make a set() of known indexes   
+      Open I1, I2, R1, R2   
+      While files open    
+         read record from I1      
+         read record from I2  
+         read header from R1   
+         read header from R2  
+         index_header = I1 + rev comp(I2)    
+         new header_R1 = header_R1 + index_header   
+         new_header_R2 = header_R2 + index_header      
+         if ("N" is in I1 or I2) or (Qscore < Cutoff):           
+         write to bad R1 and bad R2 with new headers    
+         else if I1 and I2 in Known Indexes    
+            if R1 == revs_comp(R2)   
+            write to matched R1 and R2   
+            else: 
+               write to swapped R1 and R2  
+         else:    
+           wite to bad R1 and R2  
 
 8. High level functions. For each function, be sure to include:
     1. Description/doc string
