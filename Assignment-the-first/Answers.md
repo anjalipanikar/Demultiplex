@@ -31,6 +31,7 @@
          
     iii. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line             command)
             
+            ```
             zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
             
             3976613 indexes for index 1  
@@ -38,15 +39,20 @@
             zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
             
             3328051 indexes for index 2    
+            ```
          
 ## Part 2
 1. Define the problem
 
-``` We are given 4 files, 2 read files and 2 index files. Some of the indexes in the index file are mismatched with the corresponding reads, as the data is index hopped. Because some indexes are potentially swapped, we must develop and alogorithm to seperate the index swapped reads from the matched index reads, in order to filter out the high quality data.   ```
+``` 
+We are given 4 files, 2 read files and 2 index files. Some of the indexes in the index file are mismatched with the corresponding reads, as the data is index hopped. Because some indexes are potentially swapped, we must develop and alogorithm to seperate the index swapped reads from the matched index reads, in order to filter out the high quality data. 
+```
 
 3. Describe output
 
-``` 48 index-pair reads bin files for 24 different indexes for read 1 and 2, 2 files with index hopped read pairs for read 1 and 2, 2 files for undetermined low quality pairs```
+``` 
+48 index-pair reads bin files for 24 different indexes for read 1 and 2, 2 files with index hopped read pairs for read 1 and 2, 2 files for undetermined low quality pairs
+```
 
 5. Upload your [4 input FASTQ files](../TEST-input_FASTQ) and your [>=6 expected output FASTQ files](../TEST-output_FASTQ).
 
@@ -66,42 +72,49 @@
 
 
 7. Pseudocode
-   
-   Make a set() of known indexes   
-      Open I1, I2, R1, R2   
-      While files open    
-         read record from I1      
-         read record from I2  
-         read header from R1   
-         read header from R2  
-         index_header = I1 + rev comp(I2)    
-         new header_R1 = header_R1 + index_header   
-         new_header_R2 = header_R2 + index_header      
-         if ("N" is in I1 or I2) or (Qscore < Cutoff):           
-         write to bad R1 and bad R2 with new headers    
-         else if I1 and I2 in Known Indexes    
-            if R1 == revs_comp(R2)   
-            write to matched R1 and R2   
-            else: 
-               write to swapped R1 and R2  
-         else:    
-           wite to bad R1 and R2  
+
+```
+from itertools import izip
+Make a set() of known indexes   
+Open I1, I2, R1, R2   
+for line1, line 2, line 3, line 4 in izip(I1, I2, R1, R2)   
+   read record from I1      
+   read record from I2  
+   read header from R1   
+   read header from R2  
+   index_header = I1 + rev comp(I2)    
+   new header_R1 = header_R1 + index_header   
+   new_header_R2 = header_R2 + index_header      
+   if ("N" is in I1 or I2) or (Qscore < Cutoff):           
+      write to bad R1 and bad R2 with new headers    
+   else if I1 and I2 in Known Indexes    
+      if R1 == revs_comp(R2)   
+         write to matched R1 and R2   
+      else: 
+         write to swapped R1 and R2  
+      else:    
+         wite to bad R1 and R2
+```
 
 8. High level functions. For each function, be sure to include:  
-    1. Description/doc string      
-
+    1. Description/doc string 
+         
+      ```
       convert_phred(): takes a letter quality score and converts it to the number phred score   
       reverse_compliment(): takes a string sequence and returns it's reverse compliment    
       average_quality(): takes a sequence of quality scores and returns the average quality score of the sequence     
-
+      ```
     3. Function headers (name and parameters)    
 
+      ```
       convert_phred(letter_score)  
       reverse_compliment(sequence)  
-      average_quality(qscore_line)      
+      average_quality(qscore_line) 
+      ```
 
     5. Test examples for individual functions        
 
+      ```
       convert_phred():  
          Input: E  
          Output: 36    
@@ -112,19 +125,21 @@
       
       average_quality():     
          Input: #AAAFJJ<    
-         Output: 30.5  
+         Output: 30.5 
+      ```
          
     7. Return statement        
 
-         convert_phred(letter_score):    
+      ```
+      convert_phred(letter_score):    
             return Qscore
             
-         reverse_compliment(sequence):    
+      reverse_compliment(sequence):    
             return rev_comp  
             
-         average_quality(qscore_line):      
+      average_quality(qscore_line):      
             return average_qual     
-            
+      ```
             
          
          
