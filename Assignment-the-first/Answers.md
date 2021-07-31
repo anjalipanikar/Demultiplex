@@ -80,7 +80,8 @@ for read 1 and 2, 2 files for undetermined low quality pairs
 ```
 from itertools import izip
 Make a set() of known indexes   
-Open I1, I2, R1, R2   
+Open I1, I2, R1, R2
+Open the 52 files for writing 
 for line1, line 2, line 3, line 4 in izip(I1, I2, R1, R2)   
    read record from I1      
    read record from I2  
@@ -100,6 +101,7 @@ for line1, line 2, line 3, line 4 in izip(I1, I2, R1, R2)
          wite to bad R1 and R2
          
 Close I1, I2, R1, R2
+Close the 52 files
 ```
 
 8. High level functions. For each function, be sure to include:  
