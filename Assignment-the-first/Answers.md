@@ -31,15 +31,15 @@
          
     iii. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line             command)
             
-            ```
-            zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
             
-            3976613 indexes for index 1  
+        zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
             
-            zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
+        3976613 indexes for index 1  
             
-            3328051 indexes for index 2    
-            ```
+        zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
+            
+        3328051 indexes for index 2    
+            
          
 ## Part 2
 1. Define the problem
@@ -94,6 +94,8 @@ for line1, line 2, line 3, line 4 in izip(I1, I2, R1, R2)
          write to swapped R1 and R2  
       else:    
          wite to bad R1 and R2
+         
+Close I1, I2, R1, R2
 ```
 
 8. High level functions. For each function, be sure to include:  
