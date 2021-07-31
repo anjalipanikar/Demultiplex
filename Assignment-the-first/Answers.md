@@ -30,10 +30,14 @@
       A good quality score cutoff for index reads in my opinion, should be relatively higher considering they must be the most accurate in order to properly              demultiplex. I would say a quality score of 30 would be beneficial in filtering out extremely poor indexes. A good quality score cutoff for biological              reads can be a bit lower, because even if a couple of bases are incorrect the read should still generally be able to align to a genome. I would say an              average quality score of 20 for biological reads accomodates this.    
          
     iii. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line             command)
-         zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l   
-         3976613 indexes for index 1  
-         zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
-         3328051 indexes for index 2    
+            
+            zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
+            
+            3976613 indexes for index 1  
+            
+            zcat /projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz | sed -n "2~4p" | grep -F "N" | wc -l  
+            
+            3328051 indexes for index 2    
          
 ## Part 2
 1. Define the problem
