@@ -45,17 +45,17 @@
 1. Define the problem
 
 ``` 
-We are given 4 files, 2 read files and 2 index files. Some of the indexes in the index file are mismatched with the corresponding reads,     
-as the data is index hopped. Because some indexes are potentially swapped, we must develop and alogorithm to seperate the index swapped   
-reads from the matched index reads, in order to filter out the high quality data.   
-
+We are given 4 files, 2 read files and 2 index files. Some of the indexes in the index file are mismatched   
+with the corresponding reads, as the data is index hopped. Because some indexes are potentially swapped, we   
+must develop and alogorithm to seperate the index swapped reads from the matched index reads, in order to   
+filter out the high quality data.     
 ```
 
 3. Describe output
 
 ``` 
-48 index-pair reads bin files for 24 different indexes for read 1 and 2, 2 files with index hopped read pairs for read 1 and 2,   
-2 files for undetermined low quality pairs  
+48 index-pair reads bin files for 24 different indexes for read 1 and 2, 2 files with index hopped read pairs   
+for read 1 and 2, 2 files for undetermined low quality pairs    
 ```
 
 5. Upload your [4 input FASTQ files](../TEST-input_FASTQ) and your [>=6 expected output FASTQ files](../TEST-output_FASTQ).
