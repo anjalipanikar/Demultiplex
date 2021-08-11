@@ -1,0 +1,1 @@
+Demultiplex StatsTotal number of read pairs between R1 and R2: 6.0  Total number of dual-matched read pairs: 2Total number of index hopped read pairs: 2Total number of unidentifiable or low quality read pairs: 2  Percentage of index hopped reads within the dataset: 33.33333333333333  
