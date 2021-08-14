@@ -19,7 +19,7 @@
 # Arguments to Run Program: $ python3 main.py -r1 <Read 1> -r2 <Read 2> -i1 <Index 1> -i2 <Index 2> 
 #########################################################################################################
 
-import demux       
+import functions       
 import os 
 from os import path
 import gzip
